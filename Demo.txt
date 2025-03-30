@@ -1,0 +1,65 @@
+//代表註解
+//一行一個動作就像js跟python一樣，不用;符號
+//限制別人使用指標運算
+
+
+//變數
+
+var n
+
+var m
+ = 1       //類似js
+var a // 這個可能要看輸出成什麼語言,組合語言不在乎變數類型
+
+var <int> b = 1
+var<char> c = 'a'       // c c++ c# 單引號代表char
+
+var<string> e = "aaa"   //雙引號代表string
+
+var a = 1
+
+
+//函式      function開頭
+
+parallel function<int> _start(a, <string>b, c){   //類似int main()的切入點,但變成_start
+	...
+}
+#Pause
+#End
+function<int> a(b,c){
+	// 類型不必要,類似js
+	return d
+}
+
+function<int> a(<int> first, <int> second){
+	// 這裡有類型，讓編輯器或編譯器知道這裡要是什麼類型才不會錯誤（輔助用)，或轉成c c++時才需要
+	// <int>標示這個函式傳回int
+	return d
+}
+
+
+//類型       class開頭
+class class1{
+	var b
+	var c
+	function d(){ ...}
+}
+
+class class2 : class1{
+	var f
+	function g() { ...}
+}
+
+class1 a = new()  //創造新物件
+a.b     //使用變數
+a.d()   //使用函式
+
+
+
+//其他       都用＃開頭
+#using ...    // 等於c#的using, c c++的#include 或 java js python的import
+
+#NoCompile{
+	//這裡面會直接被複製貼上到輸出檔案，如果是輸出成nasm裡面就要放nasm，c就要放c
+	//使用者自己要會那種語言
+}
